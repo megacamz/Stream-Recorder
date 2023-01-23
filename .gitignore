@@ -1,0 +1,11 @@
+trash
+node_modules
+*.webm
+bundle.js
+bundle.js.map
+live-recorder-worker-bundle.js
+lit-element.html
+small.ogv
+web-ext-artifacts
+.idea
+Screenshots
