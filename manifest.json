@@ -1,0 +1,30 @@
+{
+  "name": "Stream Recorder",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Firefox extension that records streams and videos.",
+  "background": {
+    "scripts": [
+      "/src/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "/icons/rec-button.svg",
+    "browser_style": true,
+    "default_title": "Start recording"
+  },
+  "icons": {
+    "64": "icons/rec-button.svg"
+  }, 
+  "permissions": [
+    "activeTab"
+  ],
+  "web_accessible_resources": [
+    "/live-recorder-worker-bundle.js"
+  ],
+  "applications": {
+    "gecko": {
+      "strict_min_version": "63.0"
+    }
+  }
+}
